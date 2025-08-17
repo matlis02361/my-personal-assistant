@@ -1,0 +1,14 @@
+{
+    "github.copilot.chat.instructionFiles": [
+        "/home/matlis02361/.config/Code/User/globalInstructions/trello-cli-global.md"
+    ],
+    "github.copilot.conversationAdditionalContextFiles": [
+        "/home/matlis02361/.config/Code/User/globalInstructions/trello-cli-global.md"
+    ],
+    "github.copilot.chat.welcomeMessage": "🚀 Trello CLI dostępny! Komenda: 'trello' (globalnie). Snippety: 'trello-' + Tab",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "github.copilot.referencesInEditor": true,
+    "terminal.integrated.env.linux": {
+        "PATH": "${env:PATH}:${env:HOME}/bin"
+    }
+}

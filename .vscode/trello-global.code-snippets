@@ -1,0 +1,124 @@
+{
+  "Trello CLI Search": {
+    "prefix": "trello-search",
+    "body": [
+      "trello search-${1|boards,lists,cards|} \"${2:query}\""
+    ],
+    "description": "Globalne wyszukiwanie Trello CLI"
+  },
+  "Trello CLI AI Analytics": {
+    "prefix": "trello-analytics", 
+    "body": [
+      "trello ai-${1|team-analytics,risk-analytics,resource-optimization,performance-metrics,predictive-analytics,business-intelligence|} \"${2:Board Name}\" ${3:--dry-run}"
+    ],
+    "description": "AI analytics - kompletny zestaw"
+  },
+  "Trello CLI AI Organization": {
+    "prefix": "trello-organize",
+    "body": [
+      "trello ai-${1|smart-categorization,auto-organization,content-similarity,organize-boards,advanced-search|} \"${2:Board Name}\" --dry-run"
+    ],
+    "description": "AI organization - organizacja i kategoryzacja"
+  },
+  "Trello CLI Business Intelligence": {
+    "prefix": "trello-business",
+    "body": [
+      "trello ai-${1|roi-calculator,cost-benefit-analysis,stakeholder-analysis,bi-dashboard,market-analysis,user-stories|} \"${2:description}\" --dry-run"
+    ],
+    "description": "Business intelligence - analiza biznesowa"
+  },
+  "Trello CLI Project Management": {
+    "prefix": "trello-project",
+    "body": [
+      "trello ai-${1|breakdown-project,sprint-backlog,epic-breakdown,estimate-project,resource-planning,architecture-plan|} \"${2:description}\" --dry-run"
+    ],
+    "description": "Project management - zarządzanie projektami"
+  },
+  "Trello CLI Security": {
+    "prefix": "trello-security",
+    "body": [
+      "trello ai-${1|security-checklist,threat-modeling,security-architecture,penetration-testing,security-audit,compliance-check|} \"${2:description}\" --dry-run"
+    ],
+    "description": "Security analysis - bezpieczeństwo i compliance"
+  },
+  "Trello CLI GitHub Integration": {
+    "prefix": "trello-github",
+    "body": [
+      "trello github-ai-${1|generate-issue,improve-issue,breakdown-project,code-reviewer,dependency-scanner,automated-testing|} \"${2:repo or description}\" --dry-run"
+    ],
+    "description": "GitHub integration - 20+ funkcji GitHub"
+  },
+  "Trello CLI Batch Operations": {
+    "prefix": "trello-batch",
+    "body": [
+      "trello ai-${1|bulk-labeling,mass-assignment,timeline-batch,batch-update-estimates,categorize-cards,import-github-issues|} \"${2:Board Name}\" --dry-run"
+    ],
+    "description": "Batch operations - masowe operacje"
+  },
+  "Trello CLI Audio Processing": {
+    "prefix": "trello-audio",
+    "body": [
+      "trello ai-${1|meeting-to-tasks,standup-update,voice-command,audio-code-review,audio-team-retrospective,audio-client-feedback|} \"${2:audio_file.wav}\" --dry-run"
+    ],
+    "description": "Audio processing - przetwarzanie audio"
+  },
+  "Trello CLI Vision Analysis": {
+    "prefix": "trello-vision",
+    "body": [
+      "trello ai-${1|analyze-mockup,diagram-to-tasks,screenshot-to-bug,design-walkthrough,multimodal-project-review|} \"${2:image_url}\" --dry-run"
+    ],
+    "description": "Vision analysis - analiza wizualna"
+  },
+  "Trello CLI Performance": {
+    "prefix": "trello-performance",
+    "body": [
+      "trello ai-${1|performance-monitor,cost-optimization,resource-scaling,smart-batching,cache-optimization,load-balancer|} \"${2:system}\" --dry-run"
+    ],
+    "description": "Performance optimization - optymalizacja wydajności"
+  },
+  "Trello CLI Automation": {
+    "prefix": "trello-automation",
+    "body": [
+      "trello ai-${1|workflow-orchestrator,smart-assistant,decision-engine,auto-categorization,predictive-planning,intelligent-scheduling|} \"${2:task or workflow}\" --dry-run"
+    ],
+    "description": "Automation & Agents - automatyzacja"
+  },
+  "Trello CLI Complete Workflow": {
+    "prefix": "trello-workflow",
+    "body": [
+      "# ${1:Workflow Name} - Trello CLI (200+ funkcji)",
+      "trello search-boards \"${2:project}\"",
+      "trello ai-team-analytics \"${3:Board Name}\" --dry-run",
+      "trello ai-smart-categorization \"${3:Board Name}\" --dry-run", 
+      "trello ai-auto-organization \"${3:Board Name}\" --dry-run",
+      "# Wykonaj bez --dry-run gdy gotowy:",
+      "# trello ai-team-analytics \"${3:Board Name}\""
+    ],
+    "description": "Kompletny workflow - analiza i organizacja"
+  },
+  "Trello CLI Help Complete": {
+    "prefix": "trello-help",
+    "body": [
+      "# Trello CLI - 200+ funkcji AI dostępnych globalnie",
+      "trello --help",
+      "",
+      "# == PODSTAWOWE KOMENDY ==",
+      "trello search-boards \"query\"",
+      "trello ai-team-analytics \"Board Name\" --dry-run",
+      "trello ai-breakdown-project \"opis\" --dry-run",
+      "",
+      "# == OPCJA --dry-run ==",
+      "# --dry-run = bezpieczny test (nie modyfikuje Trello)",
+      "# bez --dry-run = rzeczywiste wykonanie",
+      "",
+      "# == MODUŁY ==",
+      "# Analytics: ai-team-analytics, ai-risk-analytics",
+      "# Organization: ai-auto-organization, ai-smart-categorization", 
+      "# Business: ai-roi-calculator, ai-stakeholder-analysis",
+      "# GitHub: github-ai-generate-issue, github-ai-code-reviewer",
+      "# Security: ai-security-checklist, ai-threat-modeling",
+      "# Performance: ai-performance-monitor, ai-cost-optimization"
+    ],
+    "description": "Kompletna pomoc - wszystkie 200+ funkcji"
+  }
+}

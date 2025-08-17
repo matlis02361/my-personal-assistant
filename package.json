@@ -1,0 +1,11 @@
+{
+  "name": "my-personal-assistant",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mateusz <matlis02361@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^11.3.1",
+    "node-cron": "^4.2.1"
+  }
+}
