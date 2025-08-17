@@ -6,7 +6,7 @@
 const fs = require('fs-extra');
 const path = require('path');
 const { parseWhatsAppTxt } = require('../lib/parseUtils');
-const { ensureOutputDir, saveConversationJson } = require('../lib/storage');
+const { ensureOutputDir, upsertConversationMessages, listConversations } = require('../lib/storage');
 
 const INPUT_DIR = process.env.INPUT_DIR || path.join(__dirname, '..', 'eingang');
 const OUTPUT_DIR = process.env.OUTPUT_DIR || path.join(__dirname, '..', 'ausgabe', 'whatsapp');
@@ -17,10 +17,8 @@ function importOneFile(filePath) {
     .then((content) => parseWhatsAppTxt(content))
     .then((messages) => {
       const convoId = path.basename(filePath, path.extname(filePath));
-      const meta = { source: filePath, importedAt: new Date().toISOString() };
-      const out = { meta, messages };
-      return saveConversationJson(convoId, out, OUTPUT_DIR).then((dest) => {
-        console.log('importOneFile: saved', dest);
+      return upsertConversationMessages(convoId, messages, OUTPUT_DIR).then((dest) => {
+        console.log('importOneFile: saved/merged', dest);
         return dest;
       });
     })
